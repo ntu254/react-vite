@@ -3,21 +3,22 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+//() => {} 
+// () : tham so dau vao
+// => : tra ve ket qua
+// {} : noi dung ham
+
+//component = html + css + js
+
+const MyComponent = () => {
+  return (
+    <div>Nguyen Tuan Tu update</div> //tag
+  );
+}
+
+
 const App = () => {
   const [count, setCount] = useState(0)
-
-  // // This function logs a message to the console
-  //   function myFunction() {
-  //       console.log("Hello world & Nguyen Tuan Tu");
-  //   }
-  // myFunction();
-
-  // This is an arrow function that logs a message to the console
-  const myFunction = () => {
-    console.log("Hello world & Nguyen Tuan Tu");
-  }
-  myFunction();
-
 
   return (
     <>
@@ -30,6 +31,9 @@ const App = () => {
         </a>
       </div>
       <h1>Hello world & Nguyen Tuan Tu</h1>
+      
+      <MyComponent />
+
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
