@@ -11,6 +11,8 @@ import './style.css'; //import css file
 //Fragment: <></> : khong can phai dung <div> bao quanh
 //JSX: JavaScript XML, cho phep viet HTML trong JavaScript
 //JSX: chi ho phep viet mot phan tu goc, neu muon viet nhieu phan tu thi phai dung Fragment
+//inline style: style={ {key: value} } 
+    //dung object de chua cac thuoc tinh css
 
 const MyComponent = () => {
   //kieu du lieu nguyen thuy

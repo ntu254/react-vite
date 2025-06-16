@@ -1,0 +1,77 @@
+.todo-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #ff0000; 
+}
+
+.todo-container {
+    display: flex;
+    flex-direction: column; /*Sắp xếp các phần tử con (flex items) bên trong 
+                            todo-container theo chiều dọc, từ trên xuống dưới.*/
+    align-items: center;
+    padding: 20px;
+}
+
+.todo-input {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+
+.todo-btn-add{
+    padding: 10px 20px;
+    background-color: #2b93e3; 
+    color: white; 
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.todo-list{
+    width: 500px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.todo-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+  }
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  .logo.react:hover {
+    filter: drop-shadow(0 0 2em #61dafbaa);
+  }
+  
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+     .logo {
+      animation: logo-spin infinite 20s linear;
+    }
+  }
