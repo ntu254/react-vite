@@ -13,14 +13,39 @@ import './style.css'; //import css file
 //JSX: chi ho phep viet mot phan tu goc, neu muon viet nhieu phan tu thi phai dung Fragment
 
 const MyComponent = () => {
+  //kieu du lieu nguyen thuy
+  const name = "Nguyen Tuan Tu"; //string
+  const age = 18; //number
+  // const isStudent = true; //boolean 
+  // const isStudent = null; //boolean 
+  const isStudent = undefined; //boolean 
+
+  //kieu du lieu tham chieu
+  const hobbies = [1, 2, 3]; //array
+  const person = {    //object
+    name: "Nguyen Tuan Tu",
+    age: 18,
+    isStudent: true,
+    hobbies: ["Reading", "Coding", "Traveling"]
+  };
+
+  //{}: cho phep viet JavaScript trong JSX
+  //JSON.stringify(): chuyen doi object thanh string de hien thi
+
   return (
     <>
       <div>Nguyen Tuan Tu update</div>
       <div className='child'
-        style = {
+        style={
           { borderRadius: "10px" }
         }
-      >Mau do</div>
+      >Mau do {name}</div>
+      <div>{age}</div>
+      <div>{isStudent}</div>
+      <div>{hobbies}</div>
+      <div>{JSON.stringify(person)}</div>
+      <div>{console.log("Nguyen Tuan Tu")}</div> 
+
     </>
   );
 }
