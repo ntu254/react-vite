@@ -2,19 +2,11 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import MyComponent from './components/learn/MyComponent'
+import { SecondComponent, ThirdComponent } from './components/learn/SecondComponent'
 
-//() => {} 
-// () : tham so dau vao
-// => : tra ve ket qua
-// {} : noi dung ham
 
-//component = html + css + js
 
-const MyComponent = () => {
-  return (
-    <div>Nguyen Tuan Tu update</div> //tag
-  );
-}
 
 
 const App = () => {
@@ -31,8 +23,10 @@ const App = () => {
         </a>
       </div>
       <h1>Hello world & Nguyen Tuan Tu</h1>
-      
+
       <MyComponent />
+      <SecondComponent />
+      <ThirdComponent />
 
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
